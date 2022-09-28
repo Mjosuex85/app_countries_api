@@ -16,9 +16,8 @@ const sequelize = new Sequelize(DATABASE_URL, {
       // Ref.: https://github.com/brianc/node-postgres/issues/2009
       rejectUnauthorized: false,
     },
-    keepAlive: true,
   },
-  ssl: true,
+
 });
 const basename = path.basename(__filename);
 
